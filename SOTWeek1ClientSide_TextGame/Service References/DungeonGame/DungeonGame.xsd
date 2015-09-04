@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://simpleGame/" targetNamespace="http://simpleGame/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="end" type="tns:end" />
+  <xs:element name="endResponse" type="tns:endResponse" />
+  <xs:element name="enemy" type="tns:enemy" />
+  <xs:element name="getStory" type="tns:getStory" />
+  <xs:element name="getStoryResponse" type="tns:getStoryResponse" />
+  <xs:element name="isEnemy" type="tns:isEnemy" />
+  <xs:element name="isEnemyResponse" type="tns:isEnemyResponse" />
+  <xs:element name="move" type="tns:move" />
+  <xs:element name="moveResponse" type="tns:moveResponse" />
+  <xs:complexType name="isEnemy">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isEnemyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enemy" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enemy">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element name="getLifePoints" type="xs:int" />
+      <xs:element name="getAttackPoints" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStory">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStoryResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="move">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="moveResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="end">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="endResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

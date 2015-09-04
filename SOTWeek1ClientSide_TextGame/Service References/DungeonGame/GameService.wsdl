@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://simpleGame/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="GameService" targetNamespace="http://simpleGame/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WS/DungeonGame?xsd=1" namespace="http://simpleGame/" />
+    </xsd:schema>
+  </types>
+  <message name="end">
+    <part name="parameters" element="tns:end" />
+  </message>
+  <message name="endResponse">
+    <part name="parameters" element="tns:endResponse" />
+  </message>
+  <message name="move">
+    <part name="parameters" element="tns:move" />
+  </message>
+  <message name="moveResponse">
+    <part name="parameters" element="tns:moveResponse" />
+  </message>
+  <message name="isEnemy">
+    <part name="parameters" element="tns:isEnemy" />
+  </message>
+  <message name="isEnemyResponse">
+    <part name="parameters" element="tns:isEnemyResponse" />
+  </message>
+  <message name="getStory">
+    <part name="parameters" element="tns:getStory" />
+  </message>
+  <message name="getStoryResponse">
+    <part name="parameters" element="tns:getStoryResponse" />
+  </message>
+  <portType name="SimpleDungeon">
+    <operation name="end">
+      <input wsam:Action="http://simpleGame/SimpleDungeon/endRequest" message="tns:end" />
+      <output wsam:Action="http://simpleGame/SimpleDungeon/endResponse" message="tns:endResponse" />
+    </operation>
+    <operation name="move">
+      <input wsam:Action="http://simpleGame/SimpleDungeon/moveRequest" message="tns:move" />
+      <output wsam:Action="http://simpleGame/SimpleDungeon/moveResponse" message="tns:moveResponse" />
+    </operation>
+    <operation name="isEnemy">
+      <input wsam:Action="http://simpleGame/SimpleDungeon/isEnemyRequest" message="tns:isEnemy" />
+      <output wsam:Action="http://simpleGame/SimpleDungeon/isEnemyResponse" message="tns:isEnemyResponse" />
+    </operation>
+    <operation name="getStory">
+      <input wsam:Action="http://simpleGame/SimpleDungeon/getStoryRequest" message="tns:getStory" />
+      <output wsam:Action="http://simpleGame/SimpleDungeon/getStoryResponse" message="tns:getStoryResponse" />
+    </operation>
+  </portType>
+  <binding name="GamePortBinding" type="tns:SimpleDungeon">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="end">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="move">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="isEnemy">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getStory">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="GameService">
+    <port name="GamePort" binding="tns:GamePortBinding">
+      <soap:address location="http://localhost:8080/WS/DungeonGame" />
+    </port>
+  </service>
+</definitions>

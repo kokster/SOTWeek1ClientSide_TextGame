@@ -1,0 +1,9 @@
+c:\users\konstantin\documents\visual studio 2015\Projects\SOTWeek1ClientSide_TextGame\SOTWeek1ClientSide_TextGame\bin\Debug\SOTWeek1ClientSide_TextGame.exe.config
+C:\Users\Konstantin\Documents\Visual Studio 2015\Projects\SOTWeek1ClientSide_TextGame\SOTWeek1ClientSide_TextGame\bin\Debug\SOTWeek1ClientSide_TextGame.exe
+C:\Users\Konstantin\Documents\Visual Studio 2015\Projects\SOTWeek1ClientSide_TextGame\SOTWeek1ClientSide_TextGame\bin\Debug\SOTWeek1ClientSide_TextGame.pdb
+C:\Users\Konstantin\Documents\Visual Studio 2015\Projects\SOTWeek1ClientSide_TextGame\SOTWeek1ClientSide_TextGame\obj\Debug\SOTWeek1ClientSide_TextGame.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Documents\Visual Studio 2015\Projects\SOTWeek1ClientSide_TextGame\SOTWeek1ClientSide_TextGame\obj\Debug\SOTWeek1ClientSide_TextGame.Form1.resources
+C:\Users\Konstantin\Documents\Visual Studio 2015\Projects\SOTWeek1ClientSide_TextGame\SOTWeek1ClientSide_TextGame\obj\Debug\SOTWeek1ClientSide_TextGame.Properties.Resources.resources
+C:\Users\Konstantin\Documents\Visual Studio 2015\Projects\SOTWeek1ClientSide_TextGame\SOTWeek1ClientSide_TextGame\obj\Debug\SOTWeek1ClientSide_TextGame.csproj.GenerateResource.Cache
+C:\Users\Konstantin\Documents\Visual Studio 2015\Projects\SOTWeek1ClientSide_TextGame\SOTWeek1ClientSide_TextGame\obj\Debug\SOTWeek1ClientSide_TextGame.exe
+C:\Users\Konstantin\Documents\Visual Studio 2015\Projects\SOTWeek1ClientSide_TextGame\SOTWeek1ClientSide_TextGame\obj\Debug\SOTWeek1ClientSide_TextGame.pdb
